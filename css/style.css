@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "mukta";
+    src: url(../fonts/Mukta/Mukta-ExtraBold.ttf);
+}
+p {font-family: "mukta";
+font-size: 15px;
+}
+ /* BARRA DE NAVEGACION  */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+.navbar a:hover {
+  background-color: #333;
+}
+
+
+#fondo {
+    background-color:black;
+}
+
+.inter {
+    width: 250px;
+    height: 250px;
+    margin: 20px 300px 90px 40px;
+}
+.city {
+    width: 200px;
+    height: 200px;
+    margin: 20px 400px 90px 80px;
+}
+/* Estilos para la tarjeta */
+.card {
+    /* width: 200px;
+    border: 1px solid black; 
+    border-radius: 10px; 
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;*/ 
+    width: 200px; 
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Estilos para la imagen */
+  .card img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: 100%;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    border: 1px solid black;
+    margin-right: 3px;
+    object-fit: cover;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    gap: 100px; 
+    height: 500px;
+}
+
+.card {
+    width: 200px; 
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.card p {
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+  
+  /* Estilos para el texto informativo */
+  .card-text {
+    padding: 10px 0; /* Espacio interno arriba y abajo del texto */
+  }
+  .d-block-w-100 {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    justify-self: center;
+  }
+  /* FOOTER */
+  .patrosinador1 {
+    width: 200px;
+    height: 200px;
+    margin: 90px 90px 90px 150px;
+  }
+
+.patrosinador2 {
+  width: 200px;
+  height: 200px;
+  margin: 90px 90px 90px 150px;
+}
+
+  .patrosinador3 {
+    width: 190px;
+    height: 190px;
+    margin: 70px 90px 20px 90px;
+  }
+
+  .title {
+    color: white;
+    font-size: 36px;
+    margin-right: auto;
+    padding-left: 20px;
+    text-align: center; 
+  }
+
+/* CAJA DE COMENTARIOS */
+
+.comment-box {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 10px;
+  border: 1px solid white;
+  background-color: rgb(255, 255, 255);
+  margin-top: 100px;
+
+}
+
+.comment-box h2 {
+  margin: 0px 0 10px;
+}
+
+.comment-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-box textarea {
+  resize: none;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.comment-box button {
+  padding: 8px 16px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.comment-box button:hover {
+  background-color: #333;
+}
+
+/* Envios */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.item {
+  text-align: center;
+  color: white;
+}
+
+img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+p {
+  margin-top: 10px;
+}
+
+/* Catalogo */
+catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  margin: 100px 100px 100px 100px;
+}
+
+.producto {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.producto-img {
+  width: 200px;
+  max-height: 200px;
+  image-orientation: from-image;
+  
+}
+
+.producto h3 {
+  margin: 10px 0;
+}
+
+.producto p {
+  margin: 5px 0;
+}
+
+/* Estilos para cada marca */
+.marca1 { background-color: #ffc107; }
+.marca2 { background-color: #007bff; color: #fff; }
+.marca3 { background-color: #28a745; color: #fff; }
+
+
+
+
+
+
+
+
+ 
