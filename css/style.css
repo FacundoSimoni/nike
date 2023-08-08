@@ -214,11 +214,16 @@ catalogo {
   color: white;
 }
 
+.textmarca {
+  color: white;
+}
+
 .producto {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
   color: white;
+  width: 95%;
 }
 
 .producto-img {
@@ -278,14 +283,6 @@ th {
 
 .imagen-enlace {
   display: inline-block;
-  
-}
-
-.imagen-enlace img {
-  
-}
-
-.imagen-enlace:hover {
   
 }
 
