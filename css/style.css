@@ -64,24 +64,42 @@ body {
   margin: 70px -350px 250px 90px;
 } 
 
-/* Estilos para la tarjeta */
-.card { 
-    width: 200px; 
-    height: 300px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
+/* Estilos generales para las tarjetas */
+.card {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  margin: 10px auto;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-text p {
+  font-size: 14px;
+}
+
+/* Estilos para pantallas de ancho igual o menor a 400px */
+@media (max-width: 400px) {
+  .card {
+    max-width: none; /* Remover la restricción de ancho máximo */
+    width: auto; /* Ancho automático para ocupar todo el espacio disponible */
+    margin: 10px auto; /* Centrar las tarjetas */
   }
   
-  /* Estilos para la imagen */
   .card img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
-    height: 100%;
-    border-radius: 10px; /* Bordes redondeados para la imagen */
-    border: 1px solid black;
-    margin-right: 3px;
-    object-fit: cover;
+    max-width: 200px;
   }
+  
+  .card-text p {
+    font-size: 12px;
+  }
+}
 
   section {
     display: flex;
@@ -285,6 +303,36 @@ th {
   display: inline-block;
   
 }
+
+/* Estilos para pantallas de ancho igual o menor a 400px */
+@media (max-width: 400px) {
+  .card {
+    max-width: none; /* Remover la restricción de ancho máximo */
+    width: auto; /* Ancho automático para ocupar todo el espacio disponible */
+    margin: 10px auto; /* Centrar las tarjetas */
+  }
+  
+  .card img {
+    max-width: 100%;
+  }
+  
+  .card-text p {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
