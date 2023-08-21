@@ -1,0 +1,37 @@
+ /* BARRA DE NAVEGACION  */
+ body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .titulo-grande {
+    font-size: 70px; /* Ajusta el tamaño del título a tu preferencia */
+    font-weight: bold;
+    color: #050505; /* Ajusta el color del título si lo deseas */
+    text-decoration:dashed; /* Opcional: agrega subrayado al título */
+  }
+  .navbar {
+    background-color: rgb(187, 185, 185);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  ul {
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  .navbar a {
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    padding: 15px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #333;
+  }
+  
