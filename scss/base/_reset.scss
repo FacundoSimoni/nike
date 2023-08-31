@@ -1,10 +1,13 @@
 *
 // RESET
 {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 p {font-family: "mukta";
 font-size: 15px;
+}
+body {
+    background-image: radial-gradient(black, gray, white);
 }

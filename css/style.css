@@ -1,16 +1,20 @@
+@charset "UTF-8";
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@font-face {
-    font-family: "mukta";
-    src: url(../fonts/Mukta/Mukta-ExtraBold.ttf);
+
+p {
+  font-family: "mukta";
+  font-size: 15px;
 }
-p {font-family: "mukta";
-font-size: 15px;
+
+body {
+  background-image: radial-gradient(black, gray, white);
 }
- /* BARRA DE NAVEGACION  */
+
+/* BARRA DE NAVEGACION  */
 body {
   margin: 0;
   padding: 0;
@@ -22,8 +26,9 @@ body {
   font-size: 70px; /* Ajusta el tamaño del título a tu preferencia */
   font-weight: bold;
   color: #050505; /* Ajusta el color del título si lo deseas */
-  text-decoration:dashed; /* Opcional: agrega subrayado al título */
+  text-decoration: dashed; /* Opcional: agrega subrayado al título */
 }
+
 .navbar {
   background-color: rgb(187, 185, 185);
   display: flex;
@@ -47,33 +52,33 @@ ul {
   background-color: #333;
 }
 
-
-#fondo {
-    background-image: linear-gradient(to top, black, gray, white);
+.patrosinador1 {
+  width: 125px;
+  height: 125px;
+  margin: 90px 90px 90px 150px;
 }
 
-.manch {
-    width: 500px;
-    height: 500px;
-    margin: -30px 300px 130px -600px;
+.patrosinador2 {
+  width: 170px;
+  height: 170px;
+  margin: 90px 90px 90px 150px;
 }
-.barca {
-  width: 250px;
-  height: 250px;
-  margin: 70px -450px 250px 140px;
-}
-.city {
-    width: 200px;
-    height: 200px;
-    margin: -30px 300px 130px -300px;
-}
-.paris {
-  width: 300px;
-  height: 300px;
-  margin: 70px -350px 250px 90px;
-} 
 
-/* Estilos generales para las tarjetas */
+.patrosinador3 {
+  width: 350px;
+  height: 350px;
+  margin: 70px 90px 20px 90px;
+}
+
+.title {
+  color: white;
+  font-size: 36px;
+  margin-right: auto;
+  padding-left: 20px;
+  text-align: center;
+}
+
+/* MAIN: Estilos generales para las tarjetas */
 .card {
   width: 100%;
   max-width: 400px;
@@ -82,6 +87,7 @@ ul {
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
+  border: solid 2px black;
 }
 
 .card img {
@@ -93,110 +99,19 @@ ul {
   font-size: 14px;
 }
 
-/* Estilos para pantallas de ancho igual o menor a 400px */
-@media (max-width: 400px) {
-  .card {
-    max-width: none; /* Remover la restricción de ancho máximo */
-    width: auto; /* Ancho automático para ocupar todo el espacio disponible */
-    margin: 10px auto; /* Centrar las tarjetas */
-  }
-  
-  .card img {
-    max-width: 200px;
-  }
-  
-  .card-text p {
-    font-size: 12px;
-  }
+/* Estilos para el texto informativo */
+.card-text {
+  padding: 10px 0; /* Espacio interno arriba y abajo del texto */
 }
 
-  section {
-    display: flex;
-    justify-content: center;
-    gap: 100px; 
-    height: 500px;
+.d-block-w-100 {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  justify-self: center;
 }
-
-.card {
-    width: 200px; 
-    padding: 10px;
-    text-align: center;
-}
-
-
-
-.card p {
-    margin: 10px 0 0;
-    font-size: 12px;
-}
-  
-  /* Estilos para el texto informativo */
-  .card-text {
-    padding: 10px 0; /* Espacio interno arriba y abajo del texto */
-  }
-  .d-block-w-100 {
-    width: 100%;
-    height: 500px;
-    object-fit: contain;
-    justify-self: center;
-  }
-  /* FOOTER */
-
-@media (max-width: 768px) {
-  footer {
-    display: flex;
-    justify-content: center;
-    width: auto;
-    height: auto;
-  }
-  .patrosinador1 {
-    width: 65px;
-    height: 65px;
-    /* margin: 90px 90px 90px 150px; */
-  }
-
-.patrosinador2 {
-  width: 50px;
-  height: 50px;
-  /* margin: 90px 90px 90px 150px; */
-}
-
-  .patrosinador3 {
-    width: 150px;
-    height: 150px;
-    /* margin: 70px 90px 20px 90px; */
-  }
-}
-
-
-  .patrosinador1 {
-    width: 125px;
-    height: 125px;
-    margin: 90px 90px 90px 150px;
-  }
-
-.patrosinador2 {
-  width: 170px;
-  height: 170px;
-  margin: 90px 90px 90px 150px;
-}
-
-  .patrosinador3 {
-    width: 350px;
-    height: 350px;
-    margin: 70px 90px 20px 90px;
-  }
-
-  .title {
-    color: white;
-    font-size: 36px;
-    margin-right: auto;
-    padding-left: 20px;
-    text-align: center; 
-  }
 
 /* CAJA DE COMENTARIOS */
-
 .comment-box {
   max-width: 600px;
   margin: 40px auto;
@@ -204,7 +119,6 @@ ul {
   border: 1px solid white;
   background-color: rgb(255, 255, 255);
   margin-top: 100px;
-
 }
 
 .comment-box h2 {
@@ -297,13 +211,23 @@ catalogo {
 }
 
 /* Estilos para cada marca */
-.marca1 { background-color: #ffc107; }
-.marca2 { background-color: #007bff; color: #fff; }
-.marca3 { background-color: #28a745; color: #fff; }
+.marca1 {
+  background-color: #ffc107;
+}
+
+.marca2 {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.marca3 {
+  background-color: #28a745;
+  color: #fff;
+}
 
 .nombretabla {
   color: white;
-  text-align:center; 
+  text-align: center;
   margin: 90px 90px 90px 90px;
 }
 
@@ -312,7 +236,6 @@ table {
   border-collapse: collapse;
   color: white;
   margin-left: 25px;
-
 }
 
 th, td {
@@ -338,38 +261,43 @@ th {
 
 .imagen-enlace {
   display: inline-block;
-  
 }
 
-/* Estilos para pantallas de ancho igual o menor a 400px */
+.escudofondo {
+  width: 500px;
+  height: 250px;
+  margin-left: 33%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.escudofondo .barca, .escudofondo .manch, .escudofondo .paris, .escudofondo .city {
+  width: 25%;
+  height: 100px;
+  object-fit: cover;
+  padding: 0;
+  margin-left: 25%;
+}
+
 @media (max-width: 400px) {
-  .card {
-    max-width: none; /* Remover la restricción de ancho máximo */
-    width: auto; /* Ancho automático para ocupar todo el espacio disponible */
-    margin: 10px auto; /* Centrar las tarjetas */
+  .navbar {
+    display: flex;
+    flex-direction: row;
   }
-  
-  .card img {
-    max-width: 100%;
+  .navbar a {
+    font-size: 20px;
   }
-  
-  .card-text p {
-    font-size: 12px;
+  .footer {
+    background-color: black;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .patrosinador1, .footer .patrosinador2, .footer .patrosinador3 {
+    width: 10px;
+    height: 10px;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+/*# sourceMappingURL=style.css.map */
