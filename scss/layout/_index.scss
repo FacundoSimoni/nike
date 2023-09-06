@@ -90,48 +90,6 @@
     margin-top: 10px;
   }
   
-  /* Catalogo */
-  catalogo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
-    margin: 100px 100px 100px 100px;
-    color: white;
-  }
-  
-  .textmarca {
-    color: white;
-  }
-  
-  .producto {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    color: white;
-    width: 95%;
-  }
-  
-  .producto-img {
-    width: 200px;
-    max-height: 200px;
-    image-orientation: from-image;
-    justify-content: center;
-  }
-  
-  .producto h3 {
-    margin: 10px 0;
-  }
-  
-  .producto p {
-    margin: 5px 0;
-  }
-  
-  /* Estilos para cada marca */
-  .marca1 { background-color: #ffc107; }
-  .marca2 { background-color: #007bff; color: #fff; }
-  .marca3 { background-color: #28a745; color: #fff; }
-  
   .nombretabla {
     color: white;
     text-align:center; 
@@ -188,5 +146,6 @@
     }
   }
 
+  
   
   

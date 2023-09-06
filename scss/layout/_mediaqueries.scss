@@ -1,12 +1,21 @@
-@media (max-width: 400px) {
-// BARRA DE NAVEGACION
-.navbar {
-  display: flex;
-  flex-direction: row;
-  a {
-    font-size: 20px;
+@media (max-width: 768px) {
+  /* Agrega aquí tus estilos específicos para móviles */
+  .producto {
+      width: 100%; /* Haz que los productos ocupen el ancho completo */
+      margin: 10px; /* Reduce el margen */
+      flex: auto;
   }
+  // NAVBAR
+  @media (max-width: 768px) {
+.nav {
+  font-size: 15px;
+  display: flex;
 }
+.navbar {
+  flex-direction: column;
+  justify-content: center;
+}
+  }
 // FOOTER
 .footer {
   background-color: black;

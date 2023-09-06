@@ -12,6 +12,8 @@ p {
 
 body {
   background-image: radial-gradient(black, gray, white);
+  object-fit: cover;
+  overflow-x: hidden;
 }
 
 /* BARRA DE NAVEGACION  */
@@ -173,58 +175,6 @@ p {
   margin-top: 10px;
 }
 
-/* Catalogo */
-catalogo {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  padding: 20px;
-  margin: 100px 100px 100px 100px;
-  color: white;
-}
-
-.textmarca {
-  color: white;
-}
-
-.producto {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  width: 95%;
-}
-
-.producto-img {
-  width: 200px;
-  max-height: 200px;
-  image-orientation: from-image;
-  justify-content: center;
-}
-
-.producto h3 {
-  margin: 10px 0;
-}
-
-.producto p {
-  margin: 5px 0;
-}
-
-/* Estilos para cada marca */
-.marca1 {
-  background-color: #ffc107;
-}
-
-.marca2 {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.marca3 {
-  background-color: #28a745;
-  color: #fff;
-}
-
 .nombretabla {
   color: white;
   text-align: center;
@@ -279,14 +229,25 @@ th {
   margin-left: 25%;
 }
 
-@media (max-width: 400px) {
-  .navbar {
+@media (max-width: 768px) {
+  /* Agrega aquí tus estilos específicos para móviles */
+  .producto {
+    width: 100%; /* Haz que los productos ocupen el ancho completo */
+    margin: 10px; /* Reduce el margen */
+    flex: auto;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  .nav {
+    font-size: 15px;
     display: flex;
-    flex-direction: row;
   }
-  .navbar a {
-    font-size: 20px;
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
   }
+}
+@media (max-width: 768px) {
   .footer {
     background-color: black;
     width: 400px;
@@ -298,6 +259,48 @@ th {
     width: 10px;
     height: 10px;
   }
+}
+/* Catalogo */
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.producto {
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #050505;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.producto img:hover {
+  transform: scale(1.1);
+}
+
+.catalogo :hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.producto h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.producto p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
