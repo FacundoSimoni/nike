@@ -10,8 +10,12 @@
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>LosBotijas</title>
 </head>
+
+
 <body  id="fondo">
   <h1 class="animate__animated animate__bounceInUp">LosBotijas</h1>
+
+
     <header>
          <!-- BARRA DE NAVEGACION  -->
       <div class="navbar">
@@ -25,21 +29,45 @@
             <a href="contactos.html">Contactos</a>
           </ul>
     </header>
+
+
+    <h1>Contacto</h1>
+    <h2>Contactate con nosotros atraves de tu mail para saber mas!</h2>
+    
+    <form action="procesar_formulario.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+        <input type="submit" value="Enviar">
+    </form>
+
+
+    <h2>Tambien poder visitar nuestro Instagram o WhatsApp para saber todo lo nuevo!</h2>
     <main class="letracontacto">
-      <h2>Contactate con nosotros a travez de:</h2>
-      <h2>Nuestros Instragram: @BotijasArg</h2>
+      <h2>Nuestro Instragram: @BotijasArg</h2>
       <a href="https://www.instagram.com/facu_simoni/" class="imagen-enlace">
         <img src="../images/contacto/instalogo.png" alt="Logo Instagram" class="instalogo">
       </a>
        <h2>WhatsApp: 2235809645</h2>
        <img src="../images/contacto/wpp.jpg" alt="Logo WhatsApp" class="wpplogo">
     </main>
+
+
     <footer>
       <!-- ESPONSORPAGINA -->
-      <img src="../images/adidaslogo.png" alt="Logo Adidas" class="patrosinador1">
-      <img src="../images/nikepatro.png" alt="Logo Nike" class="patrosinador2">
-      <img src="../images/underarmorlogo3.png" alt="Logo UnderArmor" class="patrosinador3">
+      <img src="../images/adidaslogo.png" alt="Logo De Adidas" class="patrosinador1">
+      <img src="../images/nikepatro.png" alt="Logo De Nike" class="patrosinador2">
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
