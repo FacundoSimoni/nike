@@ -29,4 +29,26 @@
   }
 }
 }
+// Tabla talles
+@media screen and (max-width: 600px) {
+  table {
+    display: block;
+  }
+  th, td {
+    display: block;
+    width: 100%; 
+  }
+}
+
+/* Estilo para pantallas pequeñas (ejemplo: menos de 600px) */
+@media screen and (max-width: 600px) {
+  .item img {
+    display: block; /* Hace que las imágenes sean elementos de bloque */
+    margin-bottom: 10px; /* Agrega espacio entre las imágenes */
+  }
+}
+
+
+
+
 

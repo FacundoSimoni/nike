@@ -1,0 +1,24 @@
+.nombretabla {
+    color: white;
+    text-align: center;
+    margin: 90px 90px 90px 90px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  table {
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+  }
+  
+  th, td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+    color: white;
+  }
+  
+  th {
+    background-color: #000000;
+  }
